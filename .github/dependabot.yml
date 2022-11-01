@@ -6,5 +6,5 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: "versions"
-        versions: ["8.x"]           
+        versions: ["8.0.0","8.x"]           
              
