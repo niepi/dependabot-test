@@ -8,4 +8,5 @@ updates:
       - dependency-name: "major-versions"
         update-types: ["version-update:semver-major"]  
       - dependency-name: "minor-versions"
-        update-types: ["version-update:semver-minor"]          
+        update-types: ["version-update:semver-minor"]     
+     
