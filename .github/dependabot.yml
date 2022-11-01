@@ -4,7 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    # ignore:
-    #   - dependency-name: "only patch"        
-    #     versions: ["8.1.x", "8.2.x"]  
-     
+    ignore:
+      - dependency-name: "major-versions"
+        update-types: ["version-update:semver-major"]  
+      - dependency-name: "minor-versions"
+        update-types: ["version-update:semver-minor"]     
+             
