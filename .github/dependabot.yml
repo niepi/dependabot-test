@@ -5,7 +5,6 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-      - dependency-name: "only patch"
-        # For Express, ignore all updates for version 4 and 5
-        versions: ["8.1", "8.2"]    
+      - dependency-name: "only patch"        
+        versions: ["8.1.x", "8.2.x"]  
      
