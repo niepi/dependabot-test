@@ -1,7 +1,27 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/7.4"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+        update-types: 
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
+  
+  - package-ecosystem: "docker"
+    directory: "/8.0"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+        update-types: 
+          - "version-update:semver-major"
+          - "version-update:semver-minor"
+  
+  - package-ecosystem: "docker"
+    directory: "/8.1"
     schedule:
       interval: "daily"
     ignore:
